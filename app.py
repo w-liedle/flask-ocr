@@ -20,5 +20,9 @@ def _find_next_id():
 def get_countries():
     return jsonify(countries)
 
+@app.get("/")
+def index():
+    return jsonify({ app_status: "running" })
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=int(os.getenv('PORT', 80)), threaded=True)
