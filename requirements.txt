@@ -1,3 +1,3 @@
-tensorflow-cpu
+tflite-runtime
 keras_ocr
 Flask

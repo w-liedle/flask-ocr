@@ -10,3 +10,6 @@ libgl1-mesa-glx
 libxrender1
 libfontconfig1
 libice6
+
+tflite-runtime
+tensorflow-cpu
