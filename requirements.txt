@@ -1,5 +1,4 @@
-tensorflow
-opencv-python-headless
+tensorflow-cpu
 matplotlib
 keras_ocr
 Flask
