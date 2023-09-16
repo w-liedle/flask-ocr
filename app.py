@@ -11,7 +11,7 @@ def get_index():
     return jsonify(app_status = "running")
 
 @app.post("/ocr/image_to_text")
-def post_index():
+def post_ocr_image_to_text():
     image = request.files['file']
     prediction_groups = pipeline.recognize([ image ])
     predicted_image = prediction_groups[0]
