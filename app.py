@@ -1,4 +1,5 @@
 # app.py
+import os
 from flask import Flask, request, jsonify
 #import keras_ocr
 #import matplotlib.pyplot as plt
@@ -20,4 +21,4 @@ def get_countries():
     return jsonify(countries)
 
 if __name__ == '__main__':
-    app.run(port = 80)
+    app.run(host="0.0.0.0", port=int(os.getenv('PORT', 80)), threaded=True)
