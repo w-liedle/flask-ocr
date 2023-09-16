@@ -2,6 +2,7 @@
 
 heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt --app flask-ocr
 
+libgl1-mesa-dri
 libgl1
 ffmpeg
 libsm6
