@@ -11,5 +11,6 @@ libxrender1
 libfontconfig1
 libice6
 
+tf-nightly
 tflite-runtime
 tensorflow-cpu
