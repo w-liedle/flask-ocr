@@ -18,3 +18,6 @@ def _find_next_id():
 @app.get("/countries")
 def get_countries():
     return jsonify(countries)
+
+if __name__ == '__main__':
+    app.run(port = 80)
