@@ -19,7 +19,10 @@ def post_ocr_image_to_text():
     recognised_text = ""
 
     for text, box in predicted_image:
-        recognised_text = recognised_text + " " + text
+        if len(recognised_text) = 0:
+            recognised_text = text
+        else:
+            recognised_text = recognised_text + " " + text
 
     return jsonify(text = recognised_text)
 
